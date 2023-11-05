@@ -4,6 +4,7 @@
 
 # 문제 인식
 나에게 온 이메일을 지우지 않을때 조차 탄소가 발생함, 컴퓨터 사용시에도 탄소가 발생함.
+
 ( https://www.hani.co.kr/arti/science/science_general/971240.html )
 
 # 해결 방안 제시
