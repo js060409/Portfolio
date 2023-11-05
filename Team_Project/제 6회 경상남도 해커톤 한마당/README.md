@@ -93,9 +93,11 @@ html,css로만 만들지 않고 진짜 OS 제작 해보기
 
 # 발표 자료
 - 우드락
+  
 ![image](https://github.com/js060409/Portfolio/assets/101975257/76b75209-0406-4603-aca5-4e5d0800c0f7)
 
 - 영상 자료
+  
  [https://cafe.naver.com/2020ohf](https://drive.google.com/file/d/1eEiQdWKZA6MMEqvkBkS8BzsynBjyt9OR/view?usp=sharing)https://drive.google.com/file/d/1eEiQdWKZA6MMEqvkBkS8BzsynBjyt9OR/view?usp=sharing
 # 결과
 해커톤 우수상 수상 ( 2등 )
