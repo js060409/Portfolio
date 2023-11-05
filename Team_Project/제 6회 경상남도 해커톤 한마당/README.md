@@ -47,6 +47,7 @@
 
 ## b. 랭킹 시스템
 ![캡처](https://github.com/js060409/Portfolio/assets/101975257/96bc6cb3-08cf-4508-927b-8a72009a6e45)
+
 위 사진은 바탕화면에서 나타날 위젯 모습, 포인트 별로 랭크를 매김
 
 ![image](https://github.com/js060409/Portfolio/assets/101975257/5a94e0ba-216b-4d35-ac1a-ab80c5db89ad)
