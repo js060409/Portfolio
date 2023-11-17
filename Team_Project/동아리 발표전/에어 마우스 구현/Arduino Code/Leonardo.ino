@@ -40,22 +40,23 @@ void loop(){
   GyY=Wire.read()<<8|Wire.read();  // 0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
   GyZ=Wire.read()<<8|Wire.read();  // 0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
   
-  int16_t gyroX, gyroZ;
+  int16_t gyroX, gyroZ; 
   int Sensitivity = 300;
-  gyroX = GyX / Sensitivity / 1.1 * -1;
+  gyroX = GyX / Sensitivity / 1 * -1;
   gyroZ = GyZ / Sensitivity * -1;
-  int a=5;
+  int a=3;
   Mouse.move(gyroZ/a, gyroX/a);
 
 
 
   if (digitalRead(leftbutton)==0) {
     Mouse.click(MOUSE_LEFT);
-    delay(500);
+    delay(300);
   }
        
   if (digitalRead(zerobutton)==0) {
     Keyboard.write(' ');
-    delay(500);
+    delay(100);
   }
 }
+
