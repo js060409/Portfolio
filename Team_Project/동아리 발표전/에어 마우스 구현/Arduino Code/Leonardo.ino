@@ -1,13 +1,14 @@
 #include <MPU6050.h>
-
 #include <Mouse.h>
-
-
-
 #include <Wire.h>
+#include <Keyboard.h>
+
+int leftbutton = 4;
+int zerobutton = 8;
 
 #define MPU6050_INT_PIN 7
 #define MPU6050_INT digitalPinToInterrupt(MPU6050_INT_PIN)
+
 
 const int MPU_addr=0x68;  // I2C address of the MPU-6050
 int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
@@ -20,8 +21,11 @@ void setup(){
   Wire.endTransmission(true);
   Serial.begin(9600);
   Mouse.begin();
+  Keyboard.begin();
   Serial.println("Mouse Start!!");
-}
+  pinMode(leftbutton, INPUT_PULLUP);
+  pinMode(zerobutton, INPUT_PULLUP);
+}   
 
 void loop(){
   Wire.beginTransmission(MPU_addr);
@@ -42,5 +46,16 @@ void loop(){
   gyroZ = GyZ / Sensitivity * -1;
   int a=5;
   Mouse.move(gyroZ/a, gyroX/a);
-}
 
+
+
+  if (digitalRead(leftbutton)==0) {
+    Mouse.click(MOUSE_LEFT);
+    delay(500);
+  }
+       
+  if (digitalRead(zerobutton)==0) {
+    Keyboard.write(' ');
+    delay(500);
+  }
+}
