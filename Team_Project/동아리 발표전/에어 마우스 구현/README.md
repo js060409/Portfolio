@@ -37,3 +37,24 @@
 4. 하드웨어 재 디자인 하기 ( 진행 중 )
 
 
+- 선 배치
+# AirMouse
+Making AirMouse(wireless) with Arduino Leonardo and Arduino Uno
+
+최종 핀 코드
+자이로
+VCC - 5V
+GND - GND
+SCL - 3
+SDA - 2
+INT - 7
+
+좌클릭
+GND
+4
+
+중앙 정렬용 엔터
+GND
+8
+
+
