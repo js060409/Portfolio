@@ -58,9 +58,7 @@
 9. 코드 재구동 확인 완료
 
 
-- 선 배치
-# AirMouse
-Making AirMouse(wireless) with Arduino Leonardo and Arduino Uno
+# 선 배치
 
 최종 핀 코드
 자이로
