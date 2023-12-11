@@ -6,6 +6,7 @@
 # 구상
 - 내부파일 ( C:\Users\ADMIN\AppData\Local\Google\Chrome ) 에서 해당 프로필들을 전부 삭제
 - 내부파일속 프로필 별로 Extensions 파일 제거 ( 반복문 활용 ) / 프로필들은 Profile 숫자 형태로 저장되어있음.
+- 여러 테스트 과정 결과 chrome 파일에서 유저의 extensions를 지우는것보다 User data를 지우는게 효율적임을 깨달음
 - 파이썬 라이브러리 활용 ( OS, shutil )
 
 
