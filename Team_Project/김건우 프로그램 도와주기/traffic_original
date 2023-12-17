@@ -1,0 +1,13 @@
+import random
+situation = ['비', '폭설', '공사 중' ,'맑은 날', '다중 추돌사고', ' 사고']
+number = int(random.randint(1,6))
+print(situation[number])
+a = int(input('현재''상태입니다. 북도로 우회하시겠습니까?''우회를 원하시면 1을 아니면 2를 선택하십시오.'))
+if a == 1:
+    print('알겠습니다.')
+elif a == 2:
+    b = int(input('현재 교통량이 많아 2시간 이상 예상됩니다. 그래도 고속도를 이용하시겠습니까?[1은 네, 2는 아니오]'))
+    if b == 1:
+        print('알겠습니다.')
+    elif b == 2:
+        print('옳은 선택입니다.')
