@@ -43,6 +43,7 @@ def integrate(function):
 
 input_string = input('함수를 입력하세요(계수*x^지수 + ~ ~ ~ 의 형식): ')
 answer = input('함수를 미분 하시겠습니까? 적분 하시겠습니까?: ')
+
 if answer == '미분':
     result = differentiate(input_string)
     print("해당 함수를 미분한 값은:", result)
@@ -50,6 +51,12 @@ if answer == '미분':
 elif answer == '적분':
     result = integrate(input_string)
     print("해당 함수를 적분한 값은:", result)
+
+elif answer == '둘다':
+    result_integral = integrate(input_string)
+    result_differential = differentiate(input_string)
+    print("해당 함수를 적분한 값은:", result_integral)
+    print("해당 함수를 미분한 값은:", result_differential)
 
 else:
     print('오류')
