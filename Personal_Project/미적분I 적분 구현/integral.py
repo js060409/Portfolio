@@ -16,7 +16,7 @@ def split_function(term):
 def integrate(function):
     terms = function.split(' + ')
     integral_terms = map(split_function, terms)
-    return ' + '.join(integral_terms)
+    return ' + '.join(integral_terms) + '+ c'
 
 input_string = input('함수를 입력하세요(계수*x^지수 + ~ ~ ~ 의 형식): ')
 result = integrate(input_string)
