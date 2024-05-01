@@ -22,4 +22,4 @@ def differentiate(function):
 
 input_string = input('함수를 입력하세요(계수*x^지수 + ~ ~ ~ 의 형식): ')
 result = differentiate(input_string)
-print("해당 함수를 적분한 값은:", result)
+print("해당 함수를 미분한 값은:", result)
