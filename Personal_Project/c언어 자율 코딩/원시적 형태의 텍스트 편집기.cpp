@@ -16,7 +16,6 @@ int main() {
 
     if (file_pointer == NULL) {
         printf("error\n");
-        return 1;
     }
 
     printf("편집기에 작성할 내용을 입력. 끝내려면 엔터를 두 번:\n");
